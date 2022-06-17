@@ -1,0 +1,117 @@
+.grid-cont
+{
+    display: grid;
+    background-color: rgb(153, 101, 202);
+    padding: 10px;
+    grid-template-columns:20% 80%;
+
+}
+.comm
+{
+  background-color: rgba(72, 27, 158, 0.964);
+  color: white;
+  padding: 10px 20px;
+  margin: 2px;
+  line-height: 100px;
+  text-align: center;
+  
+
+}
+.head
+{
+    grid-column-start: 1;
+    grid-column-end:4 ;
+}
+.side
+{
+   grid-row-start: 2;
+   grid-row-end:4 ;
+}
+.main
+{
+    grid-column: 2 /span 2;
+}
+.footer1
+{
+    grid-column: 2 /span 2;
+
+}
+
+.grid-outer
+{
+    display:grid;
+    background-color: aquamarine;
+    padding: 20px;
+    grid-gap:10px;
+    grid-template-areas: 
+    'o o o'
+    't h f';
+    height: 400px;
+}
+.grid-child
+{
+    background-color: blue;
+}
+.one
+{
+    grid-area: o;
+}
+.tw0
+{
+    grid-area: t;
+}
+.three
+{
+    grid-area: h;
+}
+.four
+{
+    grid-area: f;
+}
+.grid-main
+{
+    display: grid;
+    background-color: aqua;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas:
+    'o o o o'
+    't h f g' ;
+    height: 500px;
+
+}
+.num
+{
+    background-color: rgb(31, 31, 141);
+}
+.one
+{
+    grid-area: o;
+}
+.two
+{
+    grid-area: t;
+}
+.three
+{
+    grid-area: h;
+}
+.four
+{
+    grid-area: f ;
+
+}
+.byte
+{
+    grid-area: g ;
+}
+@media (max-width:500px)
+{
+    .grid-main
+    {
+        grid-template-areas: 
+        'o o'
+        't h'
+        'f g';
+    }
+}
